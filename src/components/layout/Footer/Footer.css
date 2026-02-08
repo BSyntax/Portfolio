@@ -1,0 +1,102 @@
+.footer {
+  width: 100%;
+  padding-top: 2rem;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+}
+
+.footer > .child-container {
+  border-top: 1px solid var(--accent-color);
+  padding-top: 5rem;
+}
+
+.footer .footer-text {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--primary-color);
+  line-height: var(--line-height-base);
+  text-align: start;
+}
+
+.footer .footer-header {
+  width: fit-content;
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  text-align: start;
+  position: relative;
+  padding-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.footer .footer-header::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary-color);
+  transition: var(--transition-05s);
+}
+
+.footer .footer-header h1 {
+  color: var(--secondary-color);
+  transition: var(--transition-05s);
+  cursor: pointer;
+}
+
+.footer .footer-header h1:hover {
+  color: var(--primary-color);
+}
+
+.footer .footer-header:hover::after {
+  background-color: var(--primary-color);
+}
+
+.footer .footer-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.footer-bottom .child-container {
+  border-top: 1px solid var(--accent-color);
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .child-container .footer-social {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer .footer-bottom .footer-social > * {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: #9e9ea3;
+  line-height: var(--line-height-base);
+  text-align: start;
+  letter-spacing: 0.05em;
+  transition: var(--transition-05s);
+  text-transform: uppercase;
+}
+
+.footer .footer-bottom .footer-social > *:hover {
+  color: var(--primary-color);
+}
+
+.footer .footer-bottom .footer-copyright {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: #9e9ea3;
+  line-height: var(--line-height-base);
+  text-align: end;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

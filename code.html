@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Muzuvukile Nqwiliso | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e65019",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211511",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .huge-text {
+            font-size: clamp(4rem, 12vw, 10rem);
+            line-height: 0.9;
+            letter-spacing: -0.05em;
+        }
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#181311] dark:text-white transition-colors duration-300">
+<div class="min-h-screen flex flex-col">
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 px-8 py-8 flex justify-between items-start mix-blend-difference">
+<div class="flex flex-col gap-1">
+<a class="text-primary font-bold text-sm uppercase tracking-widest" href="#">Work</a>
+<a class="text-white dark:text-white font-medium text-sm uppercase tracking-widest opacity-60 hover:opacity-100 transition-opacity" href="#">About</a>
+<a class="text-white dark:text-white font-medium text-sm uppercase tracking-widest opacity-60 hover:opacity-100 transition-opacity" href="#">Contact</a>
+</div>
+<div class="text-white dark:text-white font-medium text-xs uppercase tracking-tighter vertical-text">
+                Portfolio 2024 — V2
+            </div>
+</nav>
+<main class="flex-grow pt-32 pb-24 px-8 md:px-16 lg:px-24">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-48">
+<div class="lg:col-span-8">
+<h1 class="huge-text font-bold text-[#181311] dark:text-white uppercase">
+                        Muzuvukile<br/>Nqwiliso
+                    </h1>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-end pb-4 lg:pl-12">
+<p class="text-xl md:text-2xl leading-relaxed text-[#181311]/80 dark:text-white/80 font-light max-w-sm">
+                        A designer focused on <span class="text-primary font-medium">minimalist digital craftsmanship</span> and sophisticated visual identities.
+                    </p>
+</div>
+</section>
+<!-- Project List -->
+<section class="space-y-48">
+<!-- Project 1 -->
+<div class="group relative grid grid-cols-1 lg:grid-cols-12 items-center">
+<div class="lg:col-span-7 order-2 lg:order-1 relative overflow-hidden rounded-lg bg-gray-200 aspect-[4/3] lg:aspect-[16/10]">
+<img alt="Abstract 3D shapes on a minimalist background" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Abstract 3D monochromatic shapes minimalism" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJmQAfDc8JM_M7nTOOBWMLbEY5G31GHY1nWZs7oQvw9JnJP4okw6vXi1adGG6WBeqNEz5DZCfMtyEfOqxoL1BO3MMv5nY0dPWd8z6ZisMfTdNW7uJKOuZcZnPsxau15h-htFmsIAdU1bdda3J1u5Rse4cuCEh_1Mu7001e9cX_fWtR7p60cSYrBuVQr8Do23QJYePiOl0L9TjAwiiZkC7gPdzFwFFcmo4Z4YXN9jylPPL9tmxeW-E2wenCrDiGjmJFbTddHZwuKN6V"/>
+</div>
+<div class="lg:col-span-4 lg:col-start-9 order-1 lg:order-2 mb-8 lg:mb-0 flex flex-col items-start">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-4">Branding • 2023</span>
+<h2 class="text-4xl md:text-5xl font-bold mb-4 flex items-center gap-4">
+                            Lumina Core
+                            <span class="material-symbols-outlined text-primary text-3xl opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all">arrow_outward</span>
+</h2>
+<p class="text-lg text-[#181311]/60 dark:text-white/60 font-light max-w-xs">
+                            Redefining the visual language for a high-end architectural firm in Zurich.
+                        </p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative grid grid-cols-1 lg:grid-cols-12 items-center">
+<div class="lg:col-span-4 lg:col-start-1 order-1 mb-8 lg:mb-0 flex flex-col items-start lg:items-end lg:text-right">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-4">UI/UX Design • 2024</span>
+<h2 class="text-4xl md:text-5xl font-bold mb-4 flex items-center gap-4 lg:flex-row-reverse">
+                            Aura Mobile
+                            <span class="material-symbols-outlined text-primary text-3xl opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all">arrow_outward</span>
+</h2>
+<p class="text-lg text-[#181311]/60 dark:text-white/60 font-light max-w-xs">
+                            A meditation experience focused on serenity and effortless navigation.
+                        </p>
+</div>
+<div class="lg:col-span-7 lg:col-start-6 order-2 relative overflow-hidden rounded-lg bg-gray-200 aspect-[4/3] lg:aspect-[16/10]">
+<img alt="Clean desktop setup with minimalist hardware" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern clean workspace with tech accessories" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcKXfIKKxv3d_JWDsYeLMH42WZtIHsssSLWghWjy3FPZ8thVj8IGIEzxAQa1galxbB-ch032IS-4iU3m0qUX6gKodKKPAMri08jg4X0x2jRN7G0dK82m2w2UQz3nfmWZHfx_Z4qbojLHs9jLWV8miQvpJtpoCqCbZh83ZsgmO0FnYWnixHv7PKJk485MEjDlvYk1v9W6bmYHL-4SigNhyVroNUGFJ140-ZFJ5JlAhABOQt48g5DUQN1yey80QyinacEqpIibe7gyxq"/>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative grid grid-cols-1 lg:grid-cols-12 items-center">
+<div class="lg:col-span-8 order-2 lg:order-1 relative overflow-hidden rounded-lg bg-gray-200 aspect-[4/3] lg:aspect-[21/9]">
+<img alt="Modern minimalist interior design with natural lighting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Interior design with bright natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTft93LNOFV9QTzkeQmnR9kCdvQ7mkonIWITQvoF-MiMCKuIeFOQxGClXobhP_rd-2NltQu4M4uxk-2z7NQZnwxD55TQdWIjqSZZ82ZxrprW5JQ9G8VHrgBcqUxww8pZg5RioEvhAT_nMgyEu4T8MVIQY8S3PwxvH-KmuEVG0e9ob7UpR-CvfUh_JLMn1kj6yRrbmIp9AWi85FVk4qrVvHqEF5gwLRTDArhSHulW_VRSgE3EPvSn2h5emvCsddNtbYVfmDuhA7oO8Z"/>
+</div>
+<div class="lg:col-span-3 lg:col-start-10 order-1 lg:order-2 mb-8 lg:mb-0 flex flex-col items-start">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-4">Photography • 2022</span>
+<h2 class="text-4xl md:text-5xl font-bold mb-4 flex items-center gap-4">
+                            Sōl Mono
+                            <span class="material-symbols-outlined text-primary text-3xl opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all">arrow_outward</span>
+</h2>
+<p class="text-lg text-[#181311]/60 dark:text-white/60 font-light max-w-xs">
+                            A photographic study of light and shadow in Brutalist architecture.
+                        </p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-64 border-t border-[#181311]/10 dark:border-white/10 pt-24">
+<div class="flex flex-col items-start">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-8">Ready to start a project?</span>
+<a class="text-5xl md:text-7xl font-bold hover:text-primary transition-colors underline decoration-1 underline-offset-8" href="mailto:hello@nqwiliso.design">
+                        Get in touch
+                    </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="px-8 md:px-16 lg:px-24 py-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-t border-[#181311]/5 dark:border-white/5">
+<div class="flex gap-8">
+<a class="text-sm font-medium uppercase tracking-widest text-[#181311]/40 dark:text-white/40 hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-sm font-medium uppercase tracking-widest text-[#181311]/40 dark:text-white/40 hover:text-primary transition-colors" href="#">Behance</a>
+<a class="text-sm font-medium uppercase tracking-widest text-[#181311]/40 dark:text-white/40 hover:text-primary transition-colors" href="#">Instagram</a>
+</div>
+<p class="text-xs font-medium uppercase tracking-[0.2em] text-[#181311]/30 dark:text-white/30">
+                © 2024 Muzuvukile Nqwiliso. All rights reserved.
+            </p>
+</footer>
+</div>
+</body></html>

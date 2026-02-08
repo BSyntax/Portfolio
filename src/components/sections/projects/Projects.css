@@ -1,0 +1,20 @@
+.projects-section {
+  width: 100%;
+  padding: 10rem 0;
+  background-color: var(--bg-color);
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .projects-list {
+    gap: 6rem;
+    width: 95%;
+  }
+}

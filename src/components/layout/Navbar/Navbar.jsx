@@ -10,7 +10,7 @@ export default function Navbar() {
           <ul>
             <li className="nav-link">
               <NavLink
-                to="/work"
+                to="/"
                 className={({ isActive }) =>
                   isActive ? "link active" : "link"
                 }
