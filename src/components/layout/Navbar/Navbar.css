@@ -28,7 +28,7 @@ header li {
 
 header li .link {
   color: var(--secondary-color);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-normal);
   transition: var(--transition-05s);
 }
 
@@ -49,7 +49,7 @@ header .portfolio-version {
 
 header .portfolio-version > * {
   font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-normal);
   color: var(--secondary-color);
   text-transform: uppercase;
 }

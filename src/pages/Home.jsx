@@ -6,15 +6,16 @@ export default function Home() {
   return (
     <>
       <Hero
-        header="Muzuvukile Nqwiliso"
-        subheader={
+        header={
           <>
-            Web Developer &{" "}
-            <span className="content-highlight">Web Designer</span> crafting
-            modern, fast, and visually clean web experiences.
+            Hi, I’m Muzuvukile, a{" "}
+            <span className="content-highlight">Full-Stack Developer</span>{" "}
+            crafting intuitive, user-focused web applications.
           </>
         }
+        available={false}
       />
+      <Projects />
     </>
   );
 }

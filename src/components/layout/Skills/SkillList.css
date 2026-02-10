@@ -1,0 +1,49 @@
+.skills-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.skills-track {
+  display: flex;
+  width: max-content;
+  gap: 2rem;
+  animation: scroll-logos 60s linear infinite;
+  padding: 2rem 0;
+}
+
+.skill {
+  flex: 0 0 auto;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.skill i {
+  font-size: var(--font-size-lg);
+  color: var(--text-primary);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
