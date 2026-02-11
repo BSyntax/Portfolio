@@ -1,0 +1,8 @@
+.section-header {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-base);
+  margin-bottom: 2rem;
+  text-align: start;
+  color: var(--text-color);
+}

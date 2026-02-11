@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -128,4 +128,21 @@
 
 .tech-stack .skills-container {
   width: 100%;
+}
+
+@media (max-width: 769px) {
+  .hero .hero-content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero .hero-content {
+    width: 60%;
+    max-width: 980px;
+  }
 }

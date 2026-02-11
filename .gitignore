@@ -25,3 +25,4 @@ dist-ssr
 
 inspiration/
 struct.txt
+.env

@@ -1,138 +1,86 @@
-.project-item {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  align-items: center;
-  gap: 2rem;
+.project-card {
   width: 100%;
-}
-
-.project-image-wrapper {
-  grid-column: span 7;
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--border-radius-lg, 0.5rem);
-  background-color: #e5e7eb;
-  aspect-ratio: 16 / 10;
-}
-
-.panoramic .project-image-wrapper {
-  grid-column: span 8;
-  aspect-ratio: 21 / 9;
-}
-
-.project-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.7s ease;
-}
-
-.project-item:hover .project-image {
-  transform: scale(1.05);
-}
-
-.project-info {
-  grid-column: span 4;
-  grid-column-start: 9;
+  padding: 2rem 0 2rem 2rem;
+  border-radius: 1rem;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3f3f3;
+  overflow: hidden;
+}
+
+.project-card .card-content {
+  width: 35%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
   flex-direction: column;
-  align-items: flex-start;
+  gap: 1rem;
 }
 
-.panoramic .project-info {
-  grid-column: span 4;
-  grid-column-start: 10;
-}
-
-.project-item.reversed .project-image-wrapper {
-  grid-column: 6 / span 7;
-  order: 2;
-}
-
-.project-item.reversed .project-info {
-  grid-column: 1 / span 4;
-  order: 1;
-  align-items: flex-end;
-  text-align: right;
-}
-
-.project-category {
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-bold);
-  color: var(--primary-color);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-}
-
-.project-title a {
-  font-size: clamp(2rem, 5vw, var(--font-size-3xl));
-  font-weight: var(--font-weight-bold);
-  color: var(--secondary-color);
+.project-card .card-header {
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
-  transition: color 0.3s ease;
 }
 
-.reversed .project-title a {
-  flex-direction: row-reverse;
-}
-
-.arrow-icon {
-  font-size: 0.8em;
-  color: var(--primary-color);
-  opacity: 0;
-  transform: translateX(-10px);
-  transition: all 0.3s ease;
-}
-
-.project-item.reversed .arrow-icon {
-  transform: translateX(10px);
-}
-
-.project-item:hover .arrow-icon {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.project-description {
-  font-size: var(--font-size-base);
-  color: var(--text-color);
-  font-weight: 300;
-  max-width: 320px;
+.project-card .card-header .card-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
   line-height: var(--line-height-base);
-  opacity: 0.6;
+  text-align: start;
+  color: var(--secondary-color);
 }
 
-@media (max-width: 1024px) {
-  .project-item,
-  .project-item.reversed {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
+.project-card .card-header .card-logo {
+  width: 1.5rem;
+}
 
-  .project-image-wrapper,
-  .panoramic .project-image-wrapper,
-  .project-item.reversed .project-image-wrapper {
-    grid-column: span 1;
-    order: 2;
-  }
+.project-card .card-header .card-logo img {
+  width: 100%;
+}
 
-  .project-info,
-  .panoramic .project-info,
-  .project-item.reversed .project-info {
-    grid-column: span 1;
-    order: 1;
-    align-items: flex-start;
-    text-align: left;
-    margin-bottom: 1rem;
-  }
+.project-card .card-body {
+  width: 100%;
+}
 
-  .project-title a,
-  .reversed .project-title a {
-    flex-direction: row;
-    font-size: var(--font-size-2xl);
-  }
+.project-card .card-body p {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-base);
+  text-align: start;
+  color: var(--text-color);
+}
+
+.card-body .card-tags {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+  margin-top: 0.625rem;
+}
+
+.card-body .card-tags .tag {
+  width: fit-content;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-base);
+  text-align: start;
+  color: var(--text-color);
+}
+
+.project-card button {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.project-card .card-image {
+  width: 90%;
+  height: 100%;
+}
+
+.project-card .card-image img {
+  width: 100%;
+  height: 100%;
 }

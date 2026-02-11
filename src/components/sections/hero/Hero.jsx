@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Skills from "../../layout/Skills/SkillList";
 import "./Hero.css";
 
@@ -18,6 +18,15 @@ export default function Hero({ header, available }) {
     "devicon-java-plain",
     "devicon-csharp-plain",
   ];
+
+  const [availableStatus, setAvailableStatus] = useState("");
+
+  useEffect(() => {
+    available
+      ? setAvailableStatus("Available for work")
+      : setAvailableStatus("Not available for work");
+  }, [available]);
+
   return (
     <section className="hero">
       <div className="child-container">
@@ -25,14 +34,13 @@ export default function Hero({ header, available }) {
           <span className="hero-greeting">👋</span>
           <h1 className="hero-title">{header}</h1>
           <div className="available">
-            
             <div
               className="available-dot"
               style={{
                 backgroundColor: available ? "#16d46f" : "#ff4444",
               }}
             ></div>
-            <p>{available ? "Available for work" : "Not available for work"}</p>
+            <p>{availableStatus}</p>
           </div>
           <div className="tech-stack">
             <span className="tech-stack-title">Tech Stack </span>
