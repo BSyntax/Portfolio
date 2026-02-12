@@ -3,3 +3,27 @@
   padding: 5rem 0;
 }
 
+.projects-section .projects-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.project-card.site-wise {
+  background-color: #0d3134;
+  color: var(--white-color);
+}
+
+.project-card.site-wise .card-content .card-header .card-title span {
+  color: var(--white-color);
+}
+
+.project-card.site-wise .card-content .card-body p {
+  color: var(--white-color);
+}
+
+.project-card.site-wise .card-content .card-body .card-tags .tag {
+  color: var(--white-color);
+}

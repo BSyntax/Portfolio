@@ -10,7 +10,12 @@ export default function Projects({ projects }) {
         <SectionHeader title="Selected Work" />
         <div className="projects-list">
           {projects.map((project) => (
-            <Card key={project.id} project={project} />
+            <Card
+              key={project.id}
+              project={project}
+              title={project.title}
+              type={project.type}
+            />
           ))}
         </div>
       </div>
